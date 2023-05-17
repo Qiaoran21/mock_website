@@ -1,0 +1,355 @@
+/********w************
+    
+    Project 1 Stylesheet
+    Name: Qiaoran Xue
+    Date: 2023-02-13
+    Description: Hayden Planetarium website styles. 
+
+*********************/
+
+html,
+body,
+section,
+p,
+header,
+nav,
+footer,
+div,
+article,
+aside,
+ol,
+ul,
+li,
+h1,
+h6 {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#headingSection {
+	display: flex;
+	align-items: center;
+	height: 50px;
+	width: 100%;
+}
+
+#logo {
+	flex: 1;
+	order: 1;
+}
+
+#topNav {
+	flex: 6;
+	order: 2;
+	display: flex;
+	justify-content:space-evenly;
+	align-self: end;
+	margin-bottom: 2px;
+}
+
+#topNav ul {
+	display: flex;
+}
+
+#topNav ul li {
+	display: flex;
+	align-items: center;
+}
+
+#topNav ul li:not(:last-child):after {
+	content:'|';
+	color: #2685c6;
+	padding: 0 5px;
+}
+
+#topNav ul li a {
+	color: #2685c6;
+	text-decoration: none;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: small;
+}
+
+#topNav ul li a:hover {
+	font-weight:bold;
+}
+
+#searchArea {
+	flex: 1;
+	order: 3;
+	display: flex;
+}
+
+#searchArea input {
+	border: 1px solid grey;
+	width: 80px;
+	margin-right: 5px;
+}
+
+#searchArea button {
+	background-color: #F0F0F0;
+	border: 1px solid gray;
+}
+
+#heading {
+	height: 180px;
+}
+
+#heading {
+	color: #fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-image: url(images/headerBackground.jpg);
+}
+
+#heading h1 {
+	font-weight: lighter;
+	padding:30px;
+	height: 30%;
+	letter-spacing: 5px;
+	font-size: 37px;
+}
+
+#heading h2 {
+	font-style: italic;
+	text-align: right;
+	padding: 60px;
+	font-size: 16px;
+}
+
+#mainNav {
+	background-image: linear-gradient(#98cbfe, #086b9e);
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#mainNav ul {
+	display: flex;
+	padding: 5px;
+	list-style: none;
+}
+
+#mainNav ul li {
+	padding-left: 10px;
+	padding-right: 10px;
+	display: flex;
+}
+
+#mainNav ul li:not(:first-child) {
+	border-left: 1px solid #fff;
+	height: 15px;
+}
+
+#mainNav ul li:not(:last-child) {
+	border-right: 1px solid #2c72a0;
+	height: 15px;
+}
+
+#mainNav ul li a {
+	text-decoration: none;
+	color: #D7E1EA;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#mainNav ul li a:hover {
+	color: #fff;
+}
+
+#home {
+	font-size: 10px;
+	padding-bottom: 30px;
+}
+
+#home a {
+	text-decoration: none;
+	font-size: 10px;
+	color: #2079a6;
+}
+
+#home a:hover {
+	font-weight:bold;
+}
+
+#aboutUs {
+	display: flex;
+	flex-direction: row;
+}
+
+div#aboutUs h1 {
+	border-bottom: 1px solid #bababa;
+	font-size:18px;
+	padding-bottom: 5px;
+}
+
+div#aboutUs h2 {
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+
+#description {
+	width: 60%;
+	flex: 3;
+	order: 2;
+	padding: 20px;
+	padding-top: 5px;
+	line-height: 1.6;
+}
+
+#description ul {
+	list-style: none;
+	padding-left: 25px;
+}
+
+#description ul li {
+	padding: 5px;
+}
+
+#middle {
+	padding-top: 20px;
+}
+
+#middle ul {
+	padding-top: 12px;
+}
+
+#rightAside {
+	width: 45.5%;
+	padding: 5px;
+	border: 1px solid #bababa;
+	float: right;
+}
+
+#rightAside p {
+	font-size: 11px;
+	line-height: 1.5;
+}
+
+article p {
+	font-size: 12px;
+}
+
+article a {
+	text-decoration: none;
+	color: #2685c6;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+article a:hover {
+	font-style: italic;
+}
+
+#leftAside {
+	width: 30%;
+	flex: 1;
+	order: 1;
+}
+
+#leftAside ul li {
+	border: 1px solid #bababa;
+	height: 30px;
+	line-height: 30px;
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 10px;
+	background-image: linear-gradient(#efefef, #d5d4d4);
+}
+
+#leftAside ul li:not(:first-child) {
+	list-style-position: inside;
+}
+
+#leftAside ul li:first-child {
+	list-style: none;
+}
+
+#leftAside ul li:not(:first-child):hover {
+	color: #086b9e;
+}
+
+#nasa {
+	padding-top: 50px;
+	font-size: 11px;
+}
+
+#nasa img {
+	float: right;
+}
+
+#nasa p {
+	border-top: 1px solid #bababa;
+	padding: 5px;
+	color:#a29190;
+}
+
+body {
+	background-color: #e6e6e6;
+}
+
+header {
+	display: flex;
+	height: 50px;
+	background-color:#fff;
+}
+
+div#container {
+	width: 810px;
+	background-color: #fff;
+	border-radius: 8px;
+	margin: 10px auto;
+	padding: 10px;
+	box-shadow: 1px 1px 2px #a2a2a2, -1px -1px 2px #a2a2a2;
+}
+
+footer {
+	font-size: 10px;
+	text-align: center;
+	padding-top: 60px;
+	color: #a29190;
+}
+
+footer ul li {
+	list-style: none;
+	display: inline-block;
+}
+
+footer ul li:not(:last-child):after {
+	content:'|';
+	color: black;
+	padding: 5px;
+}
+
+footer ul li a, #copyright a, #address a {
+	text-decoration: none;
+	color: #2685c6;
+}
+
+footer ul li a:hover {
+	font-weight:bold;
+}
+
+#copyright {
+	color: black;
+}
+
+#copyright a:hover {
+	font-weight:bold;
+}
+
+#address a:hover {
+	font-weight:bold;
+}
+
+#address {
+	display: inline-flex
+}
+
+#address p {
+	padding-right: 10px;
+}
+
+#address p::after {
+	content:'|';
+	color: black;
+}
